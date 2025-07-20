@@ -35,8 +35,16 @@ as this is used by the matrix handling code to flag a key pressed or released.
 #define AIIC_KEY_2	     0x02
 #define AIIC_KEY_3	     0x03
 #define AIIC_KEY_4	     0x04
-#define AIIC_KEY_5	     0x05
-#define AIIC_KEY_6	     0x06
+
+/* These two matrix codes were swapped because I found that pressing the 5 key produced a 6 (and vice
+   versa) on an Apple IIc. This seems strange because none of the other keys in the same column were
+   transposed (which might have happened if they had been wired up incorrectly). However, I don't have
+   an actual Apple IIc keyboard to check the switch matrix.
+*/
+#define AIIC_KEY_5	     0x06
+#define AIIC_KEY_6	     0x05
+/*
+ */ 
 #define AIIC_KEY_7	     0x07
 #define AIIC_KEY_8	     0x08
 #define AIIC_KEY_9	     0x09

@@ -112,7 +112,7 @@ SCAN_CODE_TERMINATE, 	SCAN_CODE_TERMINATE, 	SCAN_CODE_TERMINATE
 
 void ScancodeInit(matrix_t *ToInit)
 {
-  logv0("Amstrad CPC-6128 machine driver selected\n");
+  logv0("Apple IIc machine driver selected\n");
   ToInit->ScancodeTable=(uint8_t *)ScancodeTableCPC;
   ToInit->ScancodeShiftTable=(uint8_t *)ScancodeShiftTableCPC;
   ToInit->matrix_shift=AIIC_KEY_SHIFT;
